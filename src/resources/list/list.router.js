@@ -1,4 +1,4 @@
-import {Router} from 'express'
+import { Router } from 'express'
 import controllers from './list.controllers'
 
 const router = Router()
@@ -6,7 +6,7 @@ const router = Router()
 // /api/list
 router
   .route('/')
-  .get(controllers.getMany)
+  .get(controllers.getOne)
   .post(controllers.createOne)
 
 // /api/list/:id
